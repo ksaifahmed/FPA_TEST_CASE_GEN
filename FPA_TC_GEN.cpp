@@ -82,7 +82,7 @@ string standardize(string bin_f, string bin_l, string sgn)
         tie(bin_l, exp) = pop_zeroes(bin_l);
         return sgn+" "+binar(exp)+" "+bin_l;
     }
-    return "Approx: " + sgn + " 0 " +bin_l;
+    return sgn + " " + binar(BIAS) + " " +bin_l;
 }
 
 int main(void){
@@ -99,7 +99,7 @@ int main(void){
         inp2 = LO + static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/(HI-LO)));
         ans = inp1 + inp2;
 
-        std::cout << std::setprecision(PRECISION) << std::fixed;
+        //std::cout << std::setprecision(PRECISION) << std::fixed;
 
         tie(bin_f, bin_l, exp) = f_to_b(inp1);
         cout << inp1 << " : " << standardize(bin_f, bin_l, exp) <<endl;
@@ -119,7 +119,7 @@ int main(void){
         inp2 = -1 + static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/(2.0)));
         ans = inp1 + inp2;
 
-        std::cout << std::setprecision(PRECISION) << std::fixed;
+        //std::cout << std::setprecision(PRECISION) << std::fixed;
 
         tie(bin_f, bin_l, exp) = f_to_b(inp1);
         cout << inp1 << " : " << standardize(bin_f, bin_l, exp) <<endl;
