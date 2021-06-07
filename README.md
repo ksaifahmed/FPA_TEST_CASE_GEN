@@ -19,6 +19,8 @@
 
 	> generates random floats and prints output in a JSON file
 	
+	> Usefull for [Logisim Circuit Tester](https://github.com/buetcse17/Logisim-Circuit-Tester)
+
 	> added my [mahdihasnat](https://github.com/mahdihasnat)
 	
 
